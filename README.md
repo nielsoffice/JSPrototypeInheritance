@@ -1,4 +1,4 @@
-# JSPrototypeInheritance
+# JS Prototype Inheritance Object
 JavaScript Prototype Inheritance using apply function and Object.create method JS.
 
 ```JS
