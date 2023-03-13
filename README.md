@@ -62,11 +62,11 @@ Beterance {talent: 'All around design', name: 'Mcgin'}
     logout: ƒ ()
     constructor: ƒ Artist(talent, name)
   [[Prototype]]: Object
-JSTraining.html:34 Mcgin
-JSTraining.html:35 All around design
-JSTraining.html:36 Mcgin You can now login!
-JSTraining.html:37 Mcgin You are now logout!
--------------------
+   Mcgin
+   All around design
+   Mcgin You can now login!
+   Mcgin You are now logout!
+--------------------------------------
 Artist {talent: 'Paint', name: 'Tame'} 
    name: "Tame"
    talent: "Paint"
@@ -75,8 +75,8 @@ Artist {talent: 'Paint', name: 'Tame'}
    logout: ƒ ()
    constructor: ƒ Artist(talent, name)
  [[Prototype]]: Object
-JSTraining.html:40 Tame
-JSTraining.html:41 Paint
-JSTraining.html:42 Tame You can now login!
-JSTraining.html:43 Tame You are now logout!
+   Tame
+   Paint
+   Tame You can now login!
+   Tame You are now logout!
 ```
