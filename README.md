@@ -32,6 +32,12 @@ but not array it is Object and you can loop and work through it.
  // Also Inherit the method or functions!
  // so now beterance has function asl well the as Artist!
  Beterance.prototype = Object.create(Artist.prototype);
+ 
+ // This method only visible to access by Beterance object.
+ // While you have a complete copy of methods from Artist!
+ Beterance.prototype.functionName = function() {
+   // do something! ...
+ }
 ```
 
 ```JS 
