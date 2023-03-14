@@ -31,9 +31,13 @@ but not array it is Object and you can loop and work through it.
   
   // Handling arguments inside the function scope to iterate instead getting one by one!
   // Arguments as Object: console.log(args) inCaseOf: Beterance( args ) { ... }
+  // Object Result: { 0: 'arg_val1' , 1: 'arg_val2' }
   // Arguments as Array : console.log(Array.from(args)) inCaseOf: Beterance( args ) { ... }
+  // Array Result: [ 'arg_val1' , 'arg_val2' ]
   // OR inCaseOf: Beterance( ...args ) { ... }
-  Artist.apply(this, args);
+  // Array Result: [ 'args[0]' , 'args[1]' ]
+  // Usage: Beterance('arg_val1','arg_val2');
+  Artist.apply(this, args);  
 
  }
  
