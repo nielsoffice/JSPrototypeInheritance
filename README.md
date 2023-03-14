@@ -110,6 +110,18 @@ Artist {talent: 'Paint', name: 'Tame'}
    Tame You are now logout!
 ```
 
+```JS
+  // Function as Object Method
+  function forVIP() { return this.name + ' is a Happy Client!' }
+
+  const obj1 = {
+     name: 'Jhon',
+     forVIP: forVIP
+  }
+
+console.log(obj1.forVIP()); // Result : Jhon is a Happy Client!
+```
+
 In addition, keep in mind once you create a "primary object" like Artist where inherit by Beterance, the primary
 object all prototype or functions will be visible to all inheritance and a new prototype or functions that only designate 
 for the heritance will be exclusive to inheritance through creating it's own prototype. 
