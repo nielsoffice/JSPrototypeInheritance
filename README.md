@@ -46,6 +46,7 @@ but not array it is Object and you can loop and work through it.
  // Extend prototype from primary object 
  Object.setPrototypeOf(Beterance, Artist.prototype);
  Beterance.prototype.getName = function() {
+   // In this approach you can now play along with the data !
    return  this.name;
  }
 ```
