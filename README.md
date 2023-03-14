@@ -1,5 +1,8 @@
 # JS Prototype Inheritance Object
-JavaScript Prototype Inheritance using apply function and Object.create method JS.
+JavaScript Prototype Inheritance using apply function and Object.create method in JS.
+This can be your alternative to achieve the associated of arrays data, But in here instead of associated
+of array this where you can collect and set all static data Object as similar to or like associated of array
+but not array it is Object and you can loop and work through it.
 
 ```JS
  // Prototype Object 
