@@ -28,7 +28,11 @@ but not array it is Object and you can loop and work through it.
  
  // Inheritance Object "Artist"
  function Beterance( ... args ) {
-
+  
+  // Handling arguments inside the function scope to iterate instead getting one by one!
+  // Arguments as Object: console.log(args) inCaseOf: Beterance( args ) { ... }
+  // Arguments as Array : console.log(Array.from(args)) inCaseOf: Beterance( args ) { ... }
+  // OR inCaseOf: Beterance( ...args ) { ... }
   Artist.apply(this, args);
 
  }
