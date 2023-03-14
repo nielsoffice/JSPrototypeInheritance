@@ -102,7 +102,7 @@ Artist {talent: 'Paint', name: 'Tame'}
 ```
 
 In addition, keep in mind once you create a "primary object" like Artist where inherit by Beterance, the primary
-object all prototype or functions must be visible to all inheritance and a new prototype or functions that only designate 
+object all prototype or functions will be visible to all inheritance and a new prototype or functions that only designate 
 for the heritance will be exclusive to inheritance through creating it's own prototype. 
 Simply, mean once you use object.create() method in JS it will give us a privelage to have a copy of ALL functions or prototypes from it's 
 parent to child. While you can add a custom function or prototype to the inherit one that not visible to primary object. 
