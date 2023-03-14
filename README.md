@@ -4,6 +4,7 @@ This can be your alternative to achieve the associated of arrays data, But in he
 of array this where you can collect and set all static data Object as similar to or like associated of array
 but not array it is Object and you can loop and work through it.
 
+
 ```JS
  // Prototype Object 
  function Artist(talent, name) {
@@ -83,3 +84,10 @@ Artist {talent: 'Paint', name: 'Tame'}
    Tame You can now login!
    Tame You are now logout!
 ```
+
+In addition, keep in mind once you create a "primary object" like Artist where inherit by Beterance, the primary
+object all prototype or functions must be visible to all inheritance and a new prototype or functions that only designate 
+for the heritance will be exclusive to inheritance through creating it's own prototype. 
+Simply, mean once you use object.create() method in JS it will give us a privelage to have a copy of ALL functions or prototypes from it's 
+parent to child. While you can add a custom function or prototype to the inherit one that not visible to primary object. 
+
