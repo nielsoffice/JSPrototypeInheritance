@@ -22,6 +22,10 @@ but not array it is Object and you can loop and work through it.
   return ( this.name + ' You are now logout!');
  }
  
+ Artist.prototype.getName = function() {
+   return  this.name;
+ }
+ 
  // Inheritance Object "Artist"
  function Beterance( ... args ) {
 
@@ -37,6 +41,12 @@ but not array it is Object and you can loop and work through it.
  // While you have a complete copy of methods from Artist!
  Beterance.prototype.functionName = function() {
    // do something! ...
+ }
+ 
+ // Extend prototype from primary object 
+ Object.setPrototypeOf(Beterance, Artist.prototype);
+ Beterance.prototype.getName = function() {
+   return  this.name;
  }
 ```
 
