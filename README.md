@@ -220,6 +220,47 @@ getFullName: ƒ ()
 [[Prototype]] : Object
  Jhon Doe
 ```
+
+```JS
+// EXTEND OR INHERIT DEFAULT OBJECT JS TO CREATE METHOD THAT REQUIRE IN ORDER TO WORKOUT THE DATA.
+// Array.map() => to print '🗺'
+// Extend Object Date to create another method ! 
+Array.prototype.mapV2 = function()  { 
+  console.log(this); // this is from array that we need to workout !
+  arr = [];
+  for (let i = 0; i < this.length; i++) {
+    arr.push((this[i]+'🗺'));
+  }
+  return arr;
+}
+
+ // Array we need to workout : [1,2,3]
+ // mapV2() we extend the Array Object and create method named mapV2() 
+ // to workout our array according to requirements
+ // we use the method in array that we need to workout!
+ // [1,2,3].mapV2()
+ console.log([1,2,3].mapV2()) // Result From: [1, 2, 3] To: ['1🗺', '2🗺', '3🗺']
+ console.log(Array.prototype) 
+
+-------------------------------------------------------------------------------------------------------
+
+ // Extend Object Date to create another method ! 
+ Date.prototype.lastYear = function(){
+  return this.getFullYear() - 1;  // this.getFullYear() is from Date Object default method.
+}
+// This a Date Object JS default
+// Prototype or I create method from Date object name lastYear
+// w/ lastYear method I call the default method getFullYear default from 
+// Date Object and substract 1 to get the result which is lastYear
+// return this.getFullYear() - 1 Result: 2022
+const getLY = new Date('2023-10-10').lastYear(); 
+
+// This is how to create another method within an existing object
+// Or this is the way to extend functionality of Object 
+console.log(getLY); // Result 2022
+console.log(Date.prototype);
+```
+
 In addition, keep in mind once you create a "primary object" like Artist where inherit by Beterance, the primary
 object all prototype or functions will be visible to all inheritance and a new prototype or functions that only designate 
 for the heritance will be exclusive to inheritance through creating it's own prototype. 
