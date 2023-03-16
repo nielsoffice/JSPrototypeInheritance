@@ -240,7 +240,7 @@ Array.prototype.mapV2 = function()  {
  // we use the method in array that we need to workout!
  // [1,2,3].mapV2()
  console.log([1,2,3].mapV2()) // Result From: [1, 2, 3] To: ['1🗺', '2🗺', '3🗺']
- console.log(Array.prototype) < checking all available properties and method from this object >
+ console.log(Array.prototype) // < checking all available properties and method from this object >
 
 -------------------------------------------------------------------------------------------------------
 
