@@ -122,6 +122,73 @@ Artist {talent: 'Paint', name: 'Tame'}
 console.log(obj1.forVIP()); // Result : Jhon is a Happy Client!
 ```
 
+```JS
+const Developer = {
+  firstName:"Jhon",
+  lastName: "Doe",
+  getFullName: function() {
+    return this.firstName + " " + this.lastName;
+  }
+}
+
+const frontEnd = {
+  firstName:"Niel",
+  lastName: "Zednanref",
+}
+
+let getfullName = Developer.getFullName.bind(frontEnd);
+console.log(getfullName());
+
+// Demo 1B 
+// Inherit the all method and propertiest of Primary method
+frontEnd.__proto__ = Developer;
+// OR 
+// Is Developer Prototype of frontEnd?? 
+// Is Developer give something to frontEnd?? // Result YES 
+console.log(Developer.isPrototypeOf(frontEnd)); // True < Developer give all methods and properties >
+console.log(frontEnd.getFullName()); // Niel Fernandez 
+console.log(frontEnd.advancetage); // true
+
+// Get Iterate all Object properties from frontend
+for (let prop in frontEnd) {
+  if (frontEnd.hasOwnProperty(prop)) {
+    const element = prop;
+    console.log(element); 
+  }
+}
+
+// Properties of Object frontend | Result 
+firstName
+lastName 
+```
+
+```JS
+// Checking the defualt method for Onbject 
+console.log(frontEnd);
+// OR 
+console.log(frontEnd.__proto__);
+
+// console.log() | result 
+{firstName: 'Niel', lastName: 'Zednanref'}
+firstName :  "Niel"
+lastName  :  "Zednanref"
+[[Prototype]] :  Object
+ constructor : ƒ Object()
+ hasOwnProperty :  ƒ hasOwnProperty()
+ isPrototypeOf :  ƒ isPrototypeOf()
+ propertyIsEnumerable :  ƒ propertyIsEnumerable()
+ toLocaleString : ƒ toLocaleString()
+ toString :  ƒ toString()
+ valueOf :  ƒ valueOf()
+ __defineGetter__ : ƒ __defineGetter__()
+ __defineSetter__ : ƒ __defineSetter__()
+ __lookupGetter__ : ƒ __lookupGetter__()
+ __lookupSetter__ : ƒ __lookupSetter__()
+ __proto__ : (...)
+ get __proto__ : ƒ __proto__()
+ set __proto__ : ƒ __proto__()
+```
+
 In addition, keep in mind once you create a "primary object" like Artist where inherit by Beterance, the primary
 object all prototype or functions will be visible to all inheritance and a new prototype or functions that only designate 
 for the heritance will be exclusive to inheritance through creating it's own prototype. 
