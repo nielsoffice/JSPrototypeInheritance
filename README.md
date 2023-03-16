@@ -210,6 +210,15 @@ console.log(frontEnd);
 frontEnd.getFullName = Developer.getFullName; 
 console.log(frontEnd.getFullName())
 
+// Console.log() | Result 
+{}
+getFullName: ƒ ()
+[[Prototype]]: Object
+ firstName: "Jhon"
+ getFullName: ƒ ()
+ lastName: "Doe"
+[[Prototype]] : Object
+ Jhon Doe
 ```
 In addition, keep in mind once you create a "primary object" like Artist where inherit by Beterance, the primary
 object all prototype or functions will be visible to all inheritance and a new prototype or functions that only designate 
