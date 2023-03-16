@@ -189,6 +189,28 @@ lastName  :  "Zednanref"
  set __proto__ : ƒ __proto__()
 ```
 
+```JS
+// Inherit FrontEnd to Developer 
+// Developer give something to FrontEnd < All properties >
+const Developer = {
+  firstName:"Jhon",
+  lastName: "Doe",
+  getFullName: function() {
+    return this.firstName + " " + this.lastName;
+  }
+}
+
+// FrontEnd inherited from Developer
+// Developer give something to frontEnd < Properties > 
+const frontEnd = Object.create(Developer); 
+console.log(frontEnd);
+
+// Borrowing Method Object
+// Reference: https://github.com/nielsoffice/JSBorrowingMethod_Object
+frontEnd.getFullName = Developer.getFullName; 
+console.log(frontEnd.getFullName())
+
+```
 In addition, keep in mind once you create a "primary object" like Artist where inherit by Beterance, the primary
 object all prototype or functions will be visible to all inheritance and a new prototype or functions that only designate 
 for the heritance will be exclusive to inheritance through creating it's own prototype. 
