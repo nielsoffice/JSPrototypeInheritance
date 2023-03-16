@@ -240,7 +240,7 @@ Array.prototype.mapV2 = function()  {
  // we use the method in array that we need to workout!
  // [1,2,3].mapV2()
  console.log([1,2,3].mapV2()) // Result From: [1, 2, 3] To: ['1🗺', '2🗺', '3🗺']
- console.log(Array.prototype) 
+ console.log(Array.prototype) < checking all available properties and method from this object >
 
 -------------------------------------------------------------------------------------------------------
 
@@ -258,7 +258,7 @@ const getLY = new Date('2023-10-10').lastYear();
 // This is how to create another method within an existing object
 // Or this is the way to extend functionality of Object 
 console.log(getLY); // Result 2022
-console.log(Date.prototype);
+console.log(Date.prototype); // < checking all available properties and method from this object >
 ```
 
 In addition, keep in mind once you create a "primary object" like Artist where inherit by Beterance, the primary
