@@ -35,7 +35,7 @@ but not array it is Object and you can loop and work through it.
   // Arguments as Array : console.log(Array.from(args)) inCaseOf: Beterance( args ) { ... }
   // Array Result: [ 'arg_val1' , 'arg_val2' ]
   // OR inCaseOf: Beterance( ...args ) { ... }
-  // Array Result: [ 'args[0]' , 'args[1]' ]
+  // Array Result: [ 'args[0]' , 'args[1]' ]  | [ 'args[0]' , 'args[1]', 'args[2]', 'args[3]' ...so on and so forth... ] 
   // Usage: Beterance('arg_val1','arg_val2');
   Artist.apply(this, args);  
 
