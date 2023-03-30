@@ -110,6 +110,38 @@ Artist {talent: 'Paint', name: 'Tame'}
    Tame You are now logout!
 ```
 
+Object.create | Create Object properties to Object
+
+```JS
+  const PersonDev = {
+
+    yearsOfExperience() {
+       console.log( 'You are qualify '+ this.name + ' as you have '+ this.yExperience ); // suppose that I have property name yExperience
+     }
+ 
+  }
+
+  const nielWPDev = Object.create(PersonDev);
+
+  console.log(nielWPDev);
+
+  // The properties that suppose in object 
+  nielWPDev.name = 'NielOffice'; 
+  nielWPDev.yExperience = 6; // the value is 6
+  nielWPDev.yearsOfExperience();
+  
+  // Console.log() | Result 
+ {}
+ name: "NielOffice"
+ yExperience: 6
+ [[Prototype]]: Object
+  yearsOfExperience: ƒ yearsOfExperience()
+  [[Prototype]]: Object
+ ------------------------------------------- 
+  You are qualify NielOffice as you have 6
+
+```
+
 ```JS
   // Function as Object Method
   function forVIP() { return this.name + ' is a Happy Client!' }
