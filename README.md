@@ -140,6 +140,8 @@ Object.create | Create Object properties to Object
  ------------------------------------------- 
   You are qualify NielOffice as you have 6
 
+ NOTE: When you use the object inside the function you, you should use the "ObjectName.call();" instead of "new ObjectName()";
+ const Dev = function() { ObjectName.call(); }
 ```
 
 ```JS
